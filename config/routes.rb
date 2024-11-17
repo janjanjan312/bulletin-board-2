@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+  root to: "boards#index"
+
+
+  devise_for :users
   get("/", { :controller => "boards", :action => "index" })
 
   # Routes for the Post resource:
@@ -43,4 +48,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  root "boards#index"
+
+
 end
