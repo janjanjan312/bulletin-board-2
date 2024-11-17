@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get("/", { :controller => "boards", :action => "index" })
 
   root to: "boards#index"
-  
+
   # Routes for the Post resource:
 
   # CREATE
@@ -48,8 +48,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-
-  root "boards#index"
 
 
 end
